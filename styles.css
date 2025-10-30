@@ -161,6 +161,12 @@ ul[class], ol[class] { list-style: none; margin: 0; padding: 0; }
 }
 
 .main__title, .news__title { font-size: var(--fs-h2); }
+.news__list{
+    display: grid;
+    gap: var(--space-6);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
 
 .news-card{
     display: flex;
