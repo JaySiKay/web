@@ -54,7 +54,16 @@
             <div class="news__list">
                 <article class="news-card">
                     <figure class="news-card__media media">
-                        <img class="media__img" src="assets/images/placeholder.jpg" alt="Фото зі студентського заходу" loading="lazy" decoding="async" />
+                        <picture>
+                            <source type="image/avif" srcset="assets/images/placeholder.avif">
+                            <source type="image/webp" srcset="assets/images/placeholder.webp">
+                            <img
+                                    src="assets/images/placeholder.jpg"
+                                    alt="Фото зі студентського заходу"
+                                    class="media__img"
+                                    width="640" height="360"
+                                    loading="lazy" decoding="async" />
+                        </picture>
                     </figure>
                     <h3 class="news-card__title">Старт навчального веб-проєкту</h3>
                     <p class="news-card__excerpt">Група розпочала роботу над веб-проєктом, який охопить HTML, CSS, JS та React…</p>
@@ -65,7 +74,16 @@
                 </article>
                 <article class="news-card">
                     <figure class="news-card__media media">
-                        <img class="media__img" src="assets/images/placeholder.jpg" alt="демонстрація лаяутів на уроці" loading="lazy" decoding="async" />
+                        <picture>
+                            <source type="image/avif" srcset="assets/images/placeholder.avif">
+                            <source type="image/webp" srcset="assets/images/placeholder.webp">
+                            <img
+                                    src="assets/images/placeholder.jpg"
+                                    alt="React"
+                                    class="media__img"
+                                    width="640" height="360"
+                                    loading="lazy" decoding="async" />
+                        </picture>
                     </figure>
                     <h3 class="news-card__title">Flexbox + Grid:практика</h3>
                     <p class="news-card__excerpt">На четвертій лекції розберемо одновимірний та двовимірний лаяути з практикою.</p>
@@ -76,7 +94,16 @@
                 </article>
                 <article class="news-card">
                     <figure class="news-card__media media">
-                        <img class="media__img" src="assets/images/placeholder.jpg" alt="React" loading="lazy" decoding="async" />
+                        <picture>
+                            <source type="image/avif" srcset="assets/images/placeholder.avif">
+                            <source type="image/webp" srcset="assets/images/placeholder.webp">
+                            <img
+                                    src="assets/images/placeholder.jpg"
+                                    alt="React"
+                                    class="media__img"
+                                    width="640" height="360"
+                                    loading="lazy" decoding="async" />
+                        </picture>
                     </figure>
                     <h3 class="news-card__title">React</h3>
                     <p class="news-card__excerpt">Заплановано вивчення основ React.</p>
