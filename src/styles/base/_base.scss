@@ -1,33 +1,60 @@
 @use 'sass:map';
 @use '../_index' as ui;
 
-
 :root{
-  --brand: #{ui.$brand};
-  --brand-600: #{ui.$brand-600};
-  --brand-100: #{ui.$brand-100};
+  --brand: var(--color-brand-500);
+  --brand-600: var(--color-brand-600);
+  --brand-100: var(--color-brand-100);
+  --brand-meta: #{ui.$surface};
+
   --fg: #{ui.$fg};
   --fg-muted: #{ui.$fg-muted};
   --bg: #{ui.$bg};
   --surface: #{ui.$surface};
   --border: #{ui.$border};
 
-  --shadow-1: #{ui.$shadow-1};
-  --radius-1: #{map.get(ui.$radius, 1)};
-  --radius-2: #{map.get(ui.$radius, 2)};
-  --container: #{ui.$container};
+    --shadow-1: #{ui.$shadow-1};
+    --radius-1: #{map.get(ui.$radius, 1)};
+    --radius-2: #{map.get(ui.$radius, 2)};
+    --container: #{ui.$container};
 
-  @each $k, $v in ui.$space { --space-#{$k}: #{$v}; }
+    @each $k, $v in ui.$space { --space-#{$k}: #{$v}; }
 
-  --c-primary: var(--brand);
-  --c-primary-600: var(--brand-600);
-  --c-surface: var(--surface);
-  --c-border: var(--border);
+    --c-primary: var(--brand);
+    --c-primary-600: var(--brand-600);
+    --c-surface: var(--surface);
+    --c-border: var(--border);
 
-  --fs-body: #{map.get(ui.$fs, body)};
-  --fs-h2:   #{map.get(ui.$fs, h2)};
-  --fs-h1:   #{map.get(ui.$fs, h1)};
+    --fs-body: #{map.get(ui.$fs, body)};
+    --fs-h2:   #{map.get(ui.$fs, h2)};
+    --fs-h1:   #{map.get(ui.$fs, h1)};
 }
+//:root{
+//  --brand: #{ui.$brand};
+//  --brand-600: #{ui.$brand-600};
+//  --brand-100: #{ui.$brand-100};
+//  --fg: #{ui.$fg};
+//  --fg-muted: #{ui.$fg-muted};
+//  --bg: #{ui.$bg};
+//  --surface: #{ui.$surface};
+//  --border: #{ui.$border};
+//
+//  --shadow-1: #{ui.$shadow-1};
+//  --radius-1: #{map.get(ui.$radius, 1)};
+//  --radius-2: #{map.get(ui.$radius, 2)};
+//  --container: #{ui.$container};
+//
+//  @each $k, $v in ui.$space { --space-#{$k}: #{$v}; }
+//
+//  --c-primary: var(--brand);
+//  --c-primary-600: var(--brand-600);
+//  --c-surface: var(--surface);
+//  --c-border: var(--border);
+//
+//  --fs-body: #{map.get(ui.$fs, body)};
+//  --fs-h2:   #{map.get(ui.$fs, h2)};
+//  --fs-h1:   #{map.get(ui.$fs, h1)};
+//}
 
 html { font-size: 16px; }
 
